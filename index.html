@@ -4,36 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project three: Product Landing Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
-
-    <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
-
-    <!-- User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar". -->
-
-    <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
-
-    <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
-
-    <!-- User Story #6: I can watch an embedded product video with id="video". -->
-
-    <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
-
-    <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
-
-    <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
-
-    <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
-
-    <!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
-
-    <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
-
-    <!-- User Story #13: The navbar should always be at the top of the viewport. -->
-
-    <!-- User Story #14: My product landing page should have at least one media query. -->
-
-    <!-- User Story #15: My product landing page should utilize CSS flexbox at least once. -->
-</body>
+    <div id="page-wrapper">
+        <!-- User Story #1: My product landing page should have a header element with a corresponding id="header". -->
+        <!-- User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here. -->
+        <!-- User Story #3: Within the #header element I can see a nav  element with a corresponding id="nav-bar". -->
+        <!-- User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link. -->
+        <!-- User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page. -->
+        <header id="header">
+            <div class="logo">
+                <figure>
+                    <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="logo product landing page">
+                </figure>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#jumbotron">Top</a></li>
+                    <li><a href="#topics">Product</a></li>
+                    <li><a href="#call-to-action">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- User Story #6: I can watch an embedded product video with id="video". -->
+        <div id="body-section">
+            <div id="jumbotron">
+                <iframe id="video" height="300" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <!-- User Story #7: My landing page has a form element with a corresponding id="form". -->
+            </div>
+            <div id="id-form">
+                <form id="form" action="https://www.freecodecamp.com/email-submit)">
+                    <!-- User Story #8: Within the form, there is an input field with id="email" where I can enter an email address. -->
+                    <!-- User Story #9: The #email input field should have placeholder text to let the user know what the field is for. -->
+                    <!-- User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address. -->
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter the email" required>
+                    <!-- User Story #11: Within the form, there is a submit input with a corresponding id="submit". -->
+                    <!-- User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit). -->
+                    <input type="submit" id="submit" value="Submit" class="buttonSubmit" />
+                </form>
+            </div>
+            <div id="topics">
+                <div id="topic1">
+                    <section>
+                        <header>  
+                            <h3>Titlle topic 1</h3>
+                        </header>
+                        <p>Texto para el tópico 1, donde vamos a decir algunas ventajas del producto y así la gente lo puede comprar.</p>	
+                    </section>
+                </div>
+                <div id="topic2">
+                    <section>
+                        <header>  
+                            <h3>Titlle topic 2</h3>
+                        </header>
+                        <p>Texto para el tópico 2, vamos a poner alguna otra ventaja para que el que entra al final le puede dar al boton de comprar.</p>	
+                    </section>
+                </div>
+                <div id="topic3">
+                    <section>
+                        <header>  
+                            <h3>Titlle topic 3</h3>
+                        </header>
+                        <p>Texto para el tópico 3, lo mismo que el tópico 1 y 2, así que ya tenemos los tres creados.</p>	
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="button-call-to-action">
+            <input type="button" value="Buy it for 9 $">
+        </div>
+        <div id="footer-section">
+            <footer>
+                <p>Footer</p>
+            </footer>
+        </div>
+    </div>
 </html>
+</body>
